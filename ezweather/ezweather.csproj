@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C547080-6A52-4138-A5DC-594CF49C390D}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ezweather</RootNamespace>
+    <AssemblyName>ezweather</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>ezweather.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>ezweather.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.30816.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Funq">
+      <HintPath>..\..\..\..\FUNQ\funq-build-1.0\Funq\WP7\Funq.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras.WP71, Version=3.0.0.19987, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="GalaSoft.MvvmLight.WP71, Version=3.0.0.19988, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="GoogleAnalyticsTracker.WindowsPhone">
+      <HintPath>..\..\..\..\GoogleAnalyticsTracker\maartenba-GoogleAnalyticsTracker-91ecf4d\maartenba-GoogleAnalyticsTracker-91ecf4d\GoogleAnalyticsTracker.WindowsPhone\Bin\Release\GoogleAnalyticsTracker.WindowsPhone.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\WindowsPhone\WP7Contrib.1.0.0.16\Binaries\7.1\Release\Microsoft.Phone.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\WindowsPhone\WP7Contrib.1.0.0.16\Binaries\7.1\Release\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\WindowsPhone\WP7Contrib.1.0.0.16\Binaries\7.1\Release\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Serialization">
+      <HintPath>..\..\..\..\SilverlightSerializer\SilverlightSerializer_v2\Bin\Release\Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Device" />
+    <Reference Include="System.Observable" />
+    <Reference Include="System.Reactive, Version=1.0.10621.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Reactive.Windows.Threading, Version=1.0.10621.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Threading.Tasks.WP71">
+      <HintPath>..\..\..\..\GoogleAnalyticsTracker\maartenba-GoogleAnalyticsTracker-91ecf4d\maartenba-GoogleAnalyticsTracker-91ecf4d\GoogleAnalyticsTracker.WindowsPhone\Bin\Release\System.Threading.Tasks.WP71.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Interactivity, Version=3.8.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Program Files (x86)\Laurent Bugnion (GalaSoft)\Mvvm Light Toolkit\Binaries\WP71\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.Serialization" />
+    <Reference Include="WatermarkedTextBoxControl">
+      <HintPath>..\..\..\..\WindowsPhone\WatermarkTextbox\WP7WatermarkTextBoxSample (2)\WP7WatermarkTextBoxSample\WatermarkTextBoxControl\Bin\Release\WatermarkedTextBoxControl.dll</HintPath>
+    </Reference>
+    <Reference Include="WP7Contrib.Collections">
+      <HintPath>..\..\..\..\WindowsPhone\WP7Contrib.1.0.0.16\Binaries\7.1\Release\WP7Contrib.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="WP7Contrib.Common">
+      <HintPath>..\..\..\..\WindowsPhone\WP7Contrib.1.0.0.16\Binaries\7.1\Release\WP7Contrib.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="WP7Contrib.Communications">
+      <HintPath>..\..\..\..\WindowsPhone\WP7Contrib.1.0.0.16\Binaries\7.1\Release\WP7Contrib.Communications.dll</HintPath>
+    </Reference>
+    <Reference Include="WP7Contrib.Diagnostics">
+      <HintPath>..\..\..\..\WindowsPhone\WP7Contrib.1.0.0.16\Binaries\7.1\Release\WP7Contrib.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="WP7Contrib.Logging">
+      <HintPath>..\..\..\..\WindowsPhone\WP7Contrib.1.0.0.16\Binaries\7.1\Release\WP7Contrib.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="WP7Contrib.Messaging">
+      <HintPath>..\..\..\..\WindowsPhone\WP7Contrib.1.0.0.16\Binaries\7.1\Release\WP7Contrib.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="WP7Contrib.Services">
+      <HintPath>..\..\..\..\WindowsPhone\WP7Contrib.1.0.0.16\Binaries\7.1\Release\WP7Contrib.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="WP7Contrib.View.Controls">
+      <HintPath>D:\WindowsPhone\WP7Contrib.1.0.0.16\Binaries\7.1\Release\WP7Contrib.View.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="WP7Contrib.View.Transitions">
+      <HintPath>..\..\..\..\WindowsPhone\WP7Contrib.1.0.0.16\Binaries\7.1\Release\WP7Contrib.View.Transitions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BootStrapper.cs" />
+    <Compile Include="Converters\HttpPathConverter.cs" />
+    <Compile Include="Converters\TempConverter.cs" />
+    <Compile Include="Helpers\AMRDebugLog.cs" />
+    <Compile Include="Helpers\ILogger.cs" />
+    <Compile Include="Helpers\IsoStoreHelper.cs" />
+    <Compile Include="Helpers\LittleWatson.cs" />
+    <Compile Include="Helpers\NetworkHelper.cs" />
+    <Compile Include="Helpers\ReviewNag.cs" />
+    <Compile Include="Messages\RefreshMessage.cs" />
+    <Compile Include="Model\City.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CityService.cs" />
+    <Compile Include="Services\GlobalLoading.cs" />
+    <Compile Include="Services\ICityService.cs" />
+    <Compile Include="ViewModel\AddCityViewModel.cs" />
+    <Compile Include="Model\CityWeather.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\ReviewViewModel.cs" />
+    <Compile Include="ViewModel\SettingsViewModel.cs" />
+    <Compile Include="ViewModel\ViewModelBaseWp7.cs" />
+    <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="View\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddCityView.xaml.cs">
+      <DependentUpon>AddCityView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Main.xaml.cs">
+      <DependentUpon>Main.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReviewView.xaml.cs">
+      <DependentUpon>ReviewView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SettingsView.xaml.cs">
+      <DependentUpon>SettingsView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\appbar.check.rest.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\appbar.favs.rest.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\appbar.questionmark.rest.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\About.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AddCityView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DataTemplates.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ReviewView.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SettingsView.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ezweather.services\ezweather.services.csproj">
+      <Project>{30E7803A-A376-47B9-AE21-5D0D1776668B}</Project>
+      <Name>ezweather.services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ezweather.task\ezweather.task.csproj">
+      <Project>{15E380B6-4EB7-4549-98D2-838788F54D42}</Project>
+      <Name>ezweather.task</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\appbar.pin.rotated.315.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\appbar.places.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

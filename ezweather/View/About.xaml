@@ -1,0 +1,59 @@
+﻿<Animation:AnimatedBasePage x:Class="ezweather.View.About"
+                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+                            xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+                            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls" mc:Ignorable="d"
+                            d:DesignWidth="480"
+                            d:DesignHeight="768"
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                            FontSize="{StaticResource PhoneFontSizeNormal}"
+                            Foreground="{StaticResource PhoneForegroundBrush}"
+                            SupportedOrientations="Portrait"
+                            xmlns:Animation="clr-namespace:WP7Contrib.View.Transitions.Animation;assembly=WP7Contrib.View.Transitions"
+                            Orientation="Portrait"
+                            shell:SystemTray.IsVisible="True"
+                            DataContext="{Binding ViewModelName, Source={StaticResource Locator}}">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <controls:Pivot Title="EZ-WEATHER">
+            <!--Pivot item one-->
+            <controls:PivotItem Header="about">
+                <Canvas>
+                	<TextBlock Height="68" Canvas.Left="20" TextWrapping="Wrap" Text="ez-weather" Canvas.Top="35" Width="428" Style="{StaticResource PhoneTextExtraLargeStyle}" Margin="0" Foreground="#FFFD0909"/>
+                	<TextBlock Height="68" Canvas.Left="20" TextWrapping="Wrap" Text="by: Alex Ritzcovan" Canvas.Top="103" Width="428" Style="{StaticResource PhoneTextExtraLargeStyle}" Margin="0" Foreground="#FFFBF9F9"/>
+                	<TextBlock Height="149" Canvas.Left="20" TextWrapping="Wrap" Canvas.Top="175" Width="428" Style="{StaticResource PhoneTextNormalStyle}" Margin="0" Foreground="#FFFBF9F9"><Run Text="Description: A simple, easy to use, no nonsense weather app that gives you an up to the minute look at what's happening outside. Forget looking out the window, just run this app. "/><LineBreak/><Run Text="nuff said."/></TextBlock>
+                	<TextBlock Height="32" Canvas.Left="20" TextWrapping="Wrap" Canvas.Top="328" Width="428" Style="{StaticResource PhoneTextNormalStyle}" Margin="0" Foreground="#FFFBF9F9" Text="version: 1.0.0"/>
+                	<TextBlock Height="32" Canvas.Left="20" TextWrapping="Wrap" Canvas.Top="366" Width="47" Style="{StaticResource PhoneTextNormalStyle}" Margin="0" Foreground="#FFFBF9F9" Text="web: "/>
+                	<HyperlinkButton Content="http://www.ez-weather.com" Height="28" Canvas.Left="67" Canvas.Top="364" Width="306" NavigateUri="http://www.ez-weather.com" Foreground="#FFFB0404"/>
+                	<TextBlock Height="32" Canvas.Left="20" TextWrapping="Wrap" Canvas.Top="402" Width="82" Style="{StaticResource PhoneTextNormalStyle}" Margin="0" Foreground="#FFFBF9F9" Text="support:"/>
+                	<HyperlinkButton Content="aritzcovan@gmail.com" Height="28" Canvas.Left="96" Canvas.Top="400" Width="264" NavigateUri="mailto:aritzcovan@gmail.com" Foreground="#FFFB0404"/>
+                	<Button Click="Button_Click" Content="review this app" Height="81" Canvas.Left="20" Canvas.Top="466" Width="311"/>
+                	<TextBlock Height="32" Canvas.Left="20" TextWrapping="Wrap" Canvas.Top="567" Width="428" Style="{StaticResource PhoneTextNormalStyle}" Margin="0" Foreground="#FFFBF9F9" Text="weather data provided by Google"/>
+                </Canvas>
+            </controls:PivotItem>
+
+            <!--Pivot item two-->
+            <controls:PivotItem Header="history">
+                <Grid>
+                	<TextBlock Height="62" Margin="8,8,209,0" TextWrapping="Wrap" Text="1.0.0.0" VerticalAlignment="Top" Style="{StaticResource PhoneTextExtraLargeStyle}" Foreground="#FFF90D0D"/>
+                	<TextBlock Height="37" Margin="8,70,209,0" TextWrapping="Wrap" Text="initial release" VerticalAlignment="Top" Style="{StaticResource PhoneTextTitle3Style}" Foreground="#FFF9F5F5"/>
+                </Grid>
+            </controls:PivotItem>
+        </controls:Pivot>
+    </Grid>
+
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</Animation:AnimatedBasePage>

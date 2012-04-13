@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="Tile173" Width="173" Height="173" Clip="F1 M 0,0L 173,0L 173,173L 0,173L 0,0" UseLayoutRounding="False">
+	<Canvas x:Name="Tile" Width="173" Height="173" Canvas.Left="0" Canvas.Top="0">
+		<Rectangle x:Name="Background" Width="173" Height="173" Canvas.Left="0" Canvas.Top="-1.52588e-005" Stretch="Fill" Fill="#FF3F6A8D"/>
+		<TextBlock x:Name="Location" FontFamily="Segoe UI Semibold" FontWeight="Bold" FontSize="15" Canvas.Left="0" Canvas.Top="0">
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<MatrixTransform Matrix="1.33333,0,0,1.33333,11,139.5"/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+			<Run Text="Location" Foreground="#FFFFFFFF"/>
+		</TextBlock>
+		<TextBlock x:Name="Temp" Canvas.Left="0" Canvas.Top="0">
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<MatrixTransform Matrix="1.33333,0,0,1.33333,82.2399,42.9332"/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+			<Run FontFamily="Segoe UI Light" FontSize="44" Text="32°" Foreground="#FFFFFFFF"/>
+		</TextBlock>
+		<Path x:Name="Path" Width="110.913" Height="94.8844" Canvas.Left="95.75" Canvas.Top="112.116" Stretch="Fill" Fill="#4DFFFFFF" Data="F1 M 173,180C 171.4,180 169.846,179.802 168.361,179.43C 168.4,181.462 168.052,183.477 167.274,185.402C 163.343,195.131 149.934,198.888 137.324,193.794C 135.931,193.231 134.606,192.584 133.357,191.864C 131.572,200.505 123.919,207 114.75,207C 104.257,207 95.75,198.493 95.75,188C 95.75,177.507 104.257,169 114.75,169C 116.846,169 118.863,169.339 120.748,169.966C 120.927,168.945 121.212,167.937 121.61,166.953C 125.541,157.223 138.95,153.466 151.559,158.561L 154.045,159.689C 154.626,151.163 160.832,144.181 168.981,142.426L 168.685,140.644C 166.686,126.425 173.49,113.713 183.882,112.253C 194.273,110.793 204.317,121.136 206.315,135.356C 208.268,149.253 201.814,161.71 191.819,163.63C 190.539,172.879 182.601,180 173,180 Z "/>
+		<Path x:Name="Cloud" Width="53.5381" Height="29" Canvas.Left="19.3083" Canvas.Top="68.0001" Stretch="Fill" Fill="#FFFFFFFF" Data="F1 M 61.6926,74.6924C 67.8526,74.6924 72.8464,79.6862 72.8464,85.8462C 72.8464,92.0063 67.8528,96.9998 61.6472,96.9999L 24.885,97.0001C 21.8051,97 19.3083,94.5031 19.3083,91.4231C 19.3083,88.6922 21.2711,86.4198 23.8629,85.9397C 23.8016,85.5457 23.7699,85.1419 23.7699,84.7307C 23.7699,80.5384 27.0745,77.1175 31.221,76.9311C 33.0561,71.7284 38.016,68.0001 43.8467,68.0001C 49.3824,68.0001 54.1333,71.3608 56.1703,76.1533C 57.7984,75.2236 59.6835,74.6924 61.6926,74.6924 Z "/>
+	</Canvas>
+</Canvas>

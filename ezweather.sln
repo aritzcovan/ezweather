@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezweather", "ezweather\ezweather.csproj", "{7C547080-6A52-4138-A5DC-594CF49C390D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezweather.task", "ezweather.task\ezweather.task.csproj", "{15E380B6-4EB7-4549-98D2-838788F54D42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezweather.services", "ezweather.services\ezweather.services.csproj", "{30E7803A-A376-47B9-AE21-5D0D1776668B}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ezweather.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C547080-6A52-4138-A5DC-594CF49C390D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C547080-6A52-4138-A5DC-594CF49C390D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C547080-6A52-4138-A5DC-594CF49C390D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7C547080-6A52-4138-A5DC-594CF49C390D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C547080-6A52-4138-A5DC-594CF49C390D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C547080-6A52-4138-A5DC-594CF49C390D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{15E380B6-4EB7-4549-98D2-838788F54D42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E380B6-4EB7-4549-98D2-838788F54D42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E380B6-4EB7-4549-98D2-838788F54D42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E380B6-4EB7-4549-98D2-838788F54D42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30E7803A-A376-47B9-AE21-5D0D1776668B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30E7803A-A376-47B9-AE21-5D0D1776668B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30E7803A-A376-47B9-AE21-5D0D1776668B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30E7803A-A376-47B9-AE21-5D0D1776668B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
