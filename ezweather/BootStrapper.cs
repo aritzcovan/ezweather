@@ -9,6 +9,9 @@ using WP7Contrib.Services.Navigation;
 using GalaSoft.MvvmLight.Messaging;
 using ezweather.services.Services;
 
+
+//this is a test comment
+
 namespace ezweather
 {
     public class BootStrapper
