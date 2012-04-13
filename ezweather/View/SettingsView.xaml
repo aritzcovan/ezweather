@@ -9,7 +9,7 @@
                             xmlns:toolkitPrimitives="clr-namespace:Microsoft.Phone.Controls.Primitives;assembly=Microsoft.Phone.Controls.Toolkit" x:Class="ezweather.View.SettingsView"
                             mc:Ignorable="d"
                             d:DesignWidth="480"
-                            d:DesignHeight="696"
+                            d:DesignHeight="768"
                             FontFamily="{StaticResource PhoneFontFamilyNormal}"
                             FontSize="{StaticResource PhoneFontSizeNormal}"
                             Foreground="{StaticResource PhoneForegroundBrush}"
@@ -19,11 +19,11 @@
                             DataContext="{Binding SettingsViewModel, Source={StaticResource Locator}}">
 
     
-   <Animation:AnimatedBasePage.ApplicationBar>
+   <!--<Animation:AnimatedBasePage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
             <shell:ApplicationBarIconButton IconUri="/icons/appbar.check.rest.png" Text="done" Click="ApplicationBarIconButton_Click"/>
         </shell:ApplicationBar>
-    </Animation:AnimatedBasePage.ApplicationBar>
+    </Animation:AnimatedBasePage.ApplicationBar>-->
 
     <Grid x:Name="LayoutRoot"
           Background="Transparent">

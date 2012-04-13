@@ -15,7 +15,7 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
     shell:SystemTray.IsVisible="True"
     DataContext="{Binding AddCityViewModel, Source={StaticResource Locator}}">
     
@@ -57,7 +57,7 @@
         		<RowDefinition Height="0.161*"/>
         		<RowDefinition Height="0.839*"/>
         	</Grid.RowDefinitions>
-        	<Button x:Name="btnAdd" Content="add" HorizontalAlignment="Right" Margin="0,8,8,8" Width="125"  >
+        	<Button x:Name="btnAdd" Content="add" HorizontalAlignment="Right" Margin="0,8,8,8" Width="125" Style="{StaticResource AddButtonStyle}"  >
         		<i:Interaction.Triggers>
         			<i:EventTrigger EventName="Click">
         				<GalaSoft_MvvmLight_Command:EventToCommand x:Name="AddCityCommand" Command="{Binding AddCityCommand, Mode=OneWay}"/>
@@ -65,20 +65,20 @@
         		</i:Interaction.Triggers>
         	</Button>
         	<ListBox x:Name="lbCities" Grid.Row="1" 
-                     Margin="24" 
+                     Margin="0,0,0,24" 
                      ItemsSource="{Binding Cities}" 
-                     SelectedItem="{Binding Path=SelectedCity}"  
+                     SelectedItem="{Binding SelectedCity}"  
                      ItemTemplate="{StaticResource CityTemplate1}" />
 
-            <water:WatermarkedTextBox Watermark="city or postal code" x:Name="txtCityName" Margin="10,8,133,8" TextWrapping="Wrap" Text="{Binding Location, Mode=TwoWay}"/>
+            <water:WatermarkedTextBox Watermark="city or postal code" x:Name="txtCityName" Margin="0,8,133,8" TextWrapping="Wrap" Text="{Binding Location, Mode=TwoWay}"/>
             </Grid>
     </Grid>
  
-
+<!--
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
             <shell:ApplicationBarIconButton IconUri="/icons/appbar.check.rest.png" Text="done" Click="btnDone_Click"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
-
+-->
 </Animation:AnimatedBasePage>
