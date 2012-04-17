@@ -116,7 +116,7 @@
       <HintPath>..\..\..\..\WindowsPhone\WP7Contrib.1.0.0.16\Binaries\7.1\Release\WP7Contrib.Services.dll</HintPath>
     </Reference>
     <Reference Include="WP7Contrib.View.Controls">
-      <HintPath>D:\WindowsPhone\WP7Contrib.1.0.0.16\Binaries\7.1\Release\WP7Contrib.View.Controls.dll</HintPath>
+      <HintPath>..\..\..\WindowsPhone\WP7Contrib.1.0.0.16\Binaries\7.1\Release\WP7Contrib.View.Controls.dll</HintPath>
     </Reference>
     <Reference Include="WP7Contrib.View.Transitions">
       <HintPath>..\..\..\..\WindowsPhone\WP7Contrib.1.0.0.16\Binaries\7.1\Release\WP7Contrib.View.Transitions.dll</HintPath>
